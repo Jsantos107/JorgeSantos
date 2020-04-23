@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Jorge Santos</title>
 </head>
+
 <body>
-    <h1>Jorge Santos</h1>
-    
+
+    <div class="slideshow-container">
+
+        <div class="slides fade">
+            <p class="numbertext">1 / 3</p>
+            <img src="./images/Denver-SE-010620.jpg">
+        </div>
+
+        <div class="slides fade">
+            <p class="numbertext">2 / 3</p>
+            <img src="./images/mainBackground.jpg">
+        </div>
+
+        <div class="slides fade">
+            <p class="numbertext">3 / 3</p>
+            <img src="./images/Jorge.jpg">
+        </div>
+
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("slides");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2500);
+        }
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+    <header class='header-wrapper'>
+        <div class="menu-container" onclick="myFunction(this)">
+            <nav class="nav-wrapper">
+                <ul>
+                    <li><a href='/'>About</a></li>
+                    <li><a href='/'>Writing</a></li>
+                    <li><a href='/'>Contact</a></li>
+                </ul>
+            </nav>
+            <div class="bar-container">
+                <p class="bar1"></p>
+                <p class="bar2"></p>
+                <p class="bar3"></p>
+            </div>
+
+        </div>
+        <h1 class='title'>
+            <a href='/'> Jorge Santos </a>
+        </h1>
+
+    </header>
+    <main class="main">
+
+    </main>
+
 </body>
+
 </html>

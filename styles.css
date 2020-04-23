@@ -1,3 +1,285 @@
-body{
-background-color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Begin CSS   */
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slides {
+    display: none;
+}
+
+.slides img {
+    height: 1000px;
+    width: 100%;
+    opacity: 70%;
+}
+
+.slideshow-container {
+    background-color: black;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slides img {
+        display: none;
+    }
+}
+
+.header-wrapper {
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    height: 120px;
+}
+.title{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-left: 30%;
+}
+.title a {
+    text-decoration: none;
+    font-size: 70px;
+    padding: 0px 60px;
+    color: white;
+}
+
+.menu-container {
+    cursor: pointer;
+}
+
+.nav-wrapper a {
+    display: inline-block;
+    border-radius: 50px;
+    color: #f2f2f2;
+    font-size: 35px;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-wrapper {
+    display: none;
+    position: absolute;
+}
+
+.nav-wrapper a:hover {
+    background-color: rgb(230, 99, 13);
+    color: black;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 45px;
+    height: 6px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.3s;
+}
+.bar-container{
+    margin: 50px;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-50deg) translate(-9px, 6px);
+    transform: rotate(-50deg) translate(-9px, 6px);
+    background-color: rgb(230, 99, 13);
+}
+
+.change .bar2 {
+    opacity: 0%;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(50deg) translate(-8px, -8px);
+    transform: rotate(50deg) translate(-8px, -8px);
+    background-color: rgb(230, 99, 13);
+}
+
+.change .nav-wrapper {
+    opacity: 85%;
+    display: block;
+    padding: 100px 50px;
+    background-color: black;
+}
+
+.main{
+    display: flex;
+    height: 500px;
 }
