@@ -133,6 +133,20 @@ table {
 
 /* Begin CSS   */
 
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(230, 99, 13);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(235, 66, 0);
+}
+
 body {
     font-family: 'Kanit', sans-serif;
 }
@@ -206,12 +220,14 @@ body {
     display: flex;
     height: 120px;
 }
-.title{
+
+.title {
     justify-content: center;
     align-items: center;
     align-self: center;
     margin-left: 30%;
 }
+
 .title a {
     text-decoration: none;
     font-size: 70px;
@@ -252,7 +268,8 @@ body {
     margin: 6px 0px;
     transition: 0.3s;
 }
-.bar-container{
+
+.bar-container {
     margin: 50px;
 }
 
@@ -279,7 +296,7 @@ body {
     background-color: black;
 }
 
-.main{
+.main {
     display: flex;
     height: 500px;
 }
