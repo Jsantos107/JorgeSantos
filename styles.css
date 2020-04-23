@@ -298,5 +298,17 @@ body {
 
 .main {
     display: flex;
-    height: 500px;
+}
+#about{
+    padding: 60px;
+    padding-left: 30%;
+}
+.about-title{
+    font-size: 55px;
+}
+.about-wrapper{
+    width: 65%;
+    padding: 50px;
+    font-size: 30px;
+    justify-content: center;
 }
