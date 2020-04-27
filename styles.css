@@ -213,12 +213,6 @@ body {
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .slides img {
-        display: none;
-    }
-}
-
 .header-wrapper {
     overflow: hidden;
     background-color: black;
@@ -369,11 +363,13 @@ body {
     display: flex;
     flex-direction: column;
 }
-.writing-img{
+
+.writing-img {
     width: 15%;
     background-color: gray;
     align-self: center;
 }
+
 .writing-title {
     font-size: 55px;
     padding: 50px;
@@ -395,17 +391,20 @@ body {
     color: rgb(230, 99, 13);
     float: right;
 }
-#contact{
+
+#contact {
     background-color: rgba(0, 0, 0, 0.034);
     display: flex;
     flex-direction: column;
 }
-#contact h1{
+
+#contact h1 {
     font-size: 55px;
     padding: 50px;
     padding-left: 30%;
 }
-.contact-form{
+
+.contact-form {
     font-size: 30px;
     display: flex;
     flex-direction: column;
@@ -415,7 +414,8 @@ body {
     padding-left: 60px;
     margin-bottom: 50px;
 }
-.email-input{
+
+.email-input {
     font-size: 25px;
     padding: 7px;
     border-radius: 10px;
@@ -425,7 +425,7 @@ body {
     margin-bottom: 10px;
 }
 
-.message-input{
+.message-input {
     border-radius: 10px;
     padding: 15px;
     font-size: 25px;
@@ -436,9 +436,10 @@ body {
     resize: both;
     overflow: auto;
 }
-.submit-input{
+
+.submit-input {
     background-color: black;
-    border-radius: 25px; 
+    border-radius: 25px;
     border: none;
     font-size: 25px;
     color: #FFFFFF;
@@ -446,7 +447,189 @@ body {
     width: 200px;
     text-align: center;
 }
-.submit-input:hover{
+
+.submit-input:hover {
     box-shadow: 0 0px 15px 0 rgb(230, 99, 13);
     color: rgb(230, 99, 13);
+}
+
+@media only screen and (max-width: 1000px) {
+    .slides img {
+        display: none;
+
+    }
+
+    .slideshow-container {
+        display: none;
+    }
+
+    .title a {
+        font-size: 50px;
+    }
+
+    .nav-wrapper a {
+        font-size: 25px;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 4px;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-50deg) translate(-6px, 6px);
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(50deg) translate(-8px, -8px);
+    }
+
+    #about h1 {
+        font-size: 40px;
+    }
+
+    .about-wrapper {
+        padding: 25px;
+        font-size: 25px;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-wrapper a {
+        padding: 20px 20px;
+        font-size: 20px;
+        line-height: 12px;
+    }
+
+    .change .nav-wrapper {
+        padding: 110px 50px;
+        padding-bottom: 20px;
+    }
+
+    .title a {
+        font-size: 30px;
+        padding: 0px 10px;
+    }
+
+    .title {
+        margin-left: 0%;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 25px;
+        height: 3px;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-50deg) translate(-5px, 5px);
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(50deg) translate(-7px, -7px);
+    }
+    #about {
+        padding-left: 16%;
+    }
+    #about h1 {
+        font-size: 30px;
+    }
+
+    .about-wrapper {
+        line-height: 20px;
+        padding: 15px;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #projects {
+        background-color: rgba(0, 0, 0, 0.034);
+        height: 107rem;
+        display: flex;
+    }
+
+    .project-title {
+        font-size: 30px;
+        padding-left: 16%;
+    }
+
+    .project-container {
+        flex-direction: column;
+        padding-top: 150px;
+    }
+
+    .project {
+        font-size: 18px;
+        line-height: 20px;
+        height: 15%;
+        padding: 15px;
+        margin-top: 3%;
+    }
+
+    .project img {
+        height: 170px;
+    }
+
+    .github-projects img {
+        height: 25px;
+    }
+
+    .writing-title {
+        font-size: 30px;
+        padding-left: 16%;
+    }
+
+    .writing-img {
+        width: 55%;
+    }
+
+    .writing-container {
+        width: 80%;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .writing-container a {
+        line-height: 20px;
+        font-size: 18px;
+    }
+    #contact h1 {
+        font-size: 30px;
+        padding-left: 16%;
+        padding-bottom: 0px;
+    }
+    .contact-form {
+        font-size: 18px;
+        width: 85%;
+    }
+    .email-input {
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .message-input {
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 18px;
+        line-height: 20px;
+        border: 2px solid black;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        resize: both;
+        overflow: auto;
+    }
+    .submit-input {
+        font-size: 18px;
+        padding: 10px;
+        width: 120px;
+    }
 }
