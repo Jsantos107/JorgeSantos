@@ -395,3 +395,58 @@ body {
     color: rgb(230, 99, 13);
     float: right;
 }
+#contact{
+    background-color: rgba(0, 0, 0, 0.034);
+    display: flex;
+    flex-direction: column;
+}
+#contact h1{
+    font-size: 55px;
+    padding: 50px;
+    padding-left: 30%;
+}
+.contact-form{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 50%;
+    padding: 15px;
+    padding-left: 60px;
+    margin-bottom: 50px;
+}
+.email-input{
+    font-size: 25px;
+    padding: 7px;
+    border-radius: 10px;
+    font-family: 'Kanit', sans-serif;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.message-input{
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: both;
+    overflow: auto;
+}
+.submit-input{
+    background-color: black;
+    border-radius: 25px; 
+    border: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+.submit-input:hover{
+    box-shadow: 0 0px 15px 0 rgb(230, 99, 13);
+    color: rgb(230, 99, 13);
+}
