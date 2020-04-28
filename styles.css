@@ -214,23 +214,21 @@ body {
 }
 
 .header-wrapper {
-    overflow: hidden;
     background-color: black;
     display: flex;
     height: 120px;
 }
 
 .title {
-    justify-content: center;
-    align-items: center;
+    display: flex;
     align-self: center;
-    margin-left: 30%;
+    width: 100%;
+    justify-content: center;
 }
 
 .title a {
     text-decoration: none;
     font-size: 70px;
-    padding: 0px 60px;
     color: white;
 }
 
@@ -297,7 +295,8 @@ body {
 
 #about {
     padding: 60px;
-    padding-left: 30%;
+    display: flex;
+    flex-direction: column;
 }
 
 #about h1 {
@@ -305,48 +304,44 @@ body {
 }
 
 .about-wrapper {
-    width: 65%;
-    justify-content: center;
     align-self: center;
+    width: 75%;
     padding: 50px;
     font-size: 30px;
 }
 
 #projects {
     background-color: rgba(0, 0, 0, 0.034);
-    height: 80rem;
     display: flex;
+    flex-direction: column;
 }
 
 .project-title {
     font-size: 55px;
-    padding: 5rem;
-    padding-left: 30%;
+    padding: 60px;
 }
 
 .project-container {
     display: flex;
     flex-direction: row;
-    padding: 50px;
-    position: absolute;
+    padding-bottom: 50px;
 }
 
 .project {
     display: flex;
     background-color: white;
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 29px;
     justify-content: center;
     flex-direction: column;
-    height: 55%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    margin: 10px;
-    padding: 5px;
-    margin-top: 8%;
+    margin: 15px;
+    padding: 20px;
 }
 
 .project img {
-    height: 50%;
+    height: 250px;
 }
 
 .project:hover {
@@ -372,16 +367,15 @@ body {
 
 .writing-title {
     font-size: 55px;
-    padding: 50px;
-    padding-left: 30%;
+    padding: 60px;
 }
 
 .writing-container {
-    width: 50%;
-    padding-left: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
     align-self: center;
     font-size: 30px;
-    margin-left: 15%;
     padding: 10px;
 }
 
@@ -400,8 +394,7 @@ body {
 
 #contact h1 {
     font-size: 55px;
-    padding: 50px;
-    padding-left: 30%;
+    padding: 60px;
 }
 
 .contact-form {
@@ -410,8 +403,6 @@ body {
     flex-direction: column;
     align-self: center;
     width: 50%;
-    padding: 15px;
-    padding-left: 60px;
     margin-bottom: 50px;
 }
 
@@ -454,6 +445,9 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
+    body{
+        line-height: 29px;
+    }
     .slides img {
         display: none;
 
@@ -494,13 +488,8 @@ body {
 
     .about-wrapper {
         padding: 25px;
-        line-height: 29px;
         font-size: 25px;
         width: 100%;
-    }
-
-    #projects {
-        height: 127rem;
     }
 
     .project-title {
@@ -509,17 +498,13 @@ body {
 
     .project-container {
         flex-direction: column;
-        padding-top: 100px;
     }
 
     .project {
         font-size: 25px;
-        line-height: 29px;
         width: 65%;
         align-self: center;
-        margin: 5px;
-        padding: 15px;
-        margin-top: 5%;
+        margin: 10px;
     }
 
     .project img {
@@ -537,11 +522,9 @@ body {
     .writing-container {
         width: 80%;
         font-size: 25px;
-        line-height: 29px;
     }
 
     .writing-container a {
-        line-height: 29px;
         font-size: 25px;
     }
 
@@ -551,17 +534,15 @@ body {
 
     .contact-form {
         font-size: 25px;
-        width: 85%;
+        width: 65%;
     }
 
     .email-input {
         font-size: 25px;
-        line-height: 29px;
     }
 
     .message-input {
         font-size: 25px;
-        line-height: 29px;
     }
 
     .submit-input {
@@ -572,6 +553,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    body{
+        line-height: 20px;
+    }
     .nav-wrapper a {
         padding: 20px 20px;
         font-size: 20px;
@@ -585,7 +569,6 @@ body {
 
     .title a {
         font-size: 30px;
-        padding: 0px 10px;
     }
 
     .title {
@@ -609,23 +592,14 @@ body {
         transform: rotate(50deg) translate(-7px, -7px);
     }
 
-    #about {
-        padding-left: 16%;
-    }
-
     #about h1 {
         font-size: 30px;
     }
 
     .about-wrapper {
-        line-height: 20px;
         padding: 15px;
         font-size: 18px;
         width: 100%;
-    }
-
-    #projects {
-        height: 115rem;
     }
 
     .project-title {
@@ -633,17 +607,9 @@ body {
         padding-left: 16%;
     }
 
-    .project-container {
-        flex-direction: column;
-        padding-top: 150px;
-    }
-
     .project {
         font-size: 18px;
-        line-height: 20px;
         height: 15%;
-        padding: 15px;
-        margin-top: 3%;
     }
 
     .project img {
@@ -659,44 +625,29 @@ body {
         padding-left: 16%;
     }
 
-    .writing-img {
-        width: 55%;
-    }
-
     .writing-container {
-        width: 80%;
         font-size: 18px;
-        line-height: 20px;
     }
 
     .writing-container a {
-        line-height: 20px;
         font-size: 18px;
     }
 
     #contact h1 {
         font-size: 30px;
-        padding-left: 16%;
-        padding-bottom: 0px;
+        padding-bottom: 25px;
     }
 
     .contact-form {
         font-size: 18px;
-        width: 85%;
     }
 
     .email-input {
         font-size: 18px;
-        line-height: 20px;
-        margin-top: 5px;
-        margin-bottom: 5px;
     }
 
     .message-input {
         font-size: 18px;
-        line-height: 20px;
-        margin-top: 5px;
-        margin-bottom: 20px;
     }
 
     .submit-input {
