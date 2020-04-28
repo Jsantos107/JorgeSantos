@@ -48,18 +48,18 @@
             setTimeout(showSlides, 2500);
         }
 
-        function myFunction(x) {
+        function changeMenu(x) {
             x.classList.toggle("change");
         }
     </script>
-    <header class='header-wrapper'>
-        <div class="menu-container" onclick="myFunction(this)">
+    <header id='header-wrapper'>
+        <div class="menu-container" onclick="changeMenu(this)">
             <nav class="nav-wrapper">
                 <ul>
-                    <li><a href='/'> About </a></li>
-                    <li><a href='/'> Projects </a></li>
-                    <li><a href='/'> Writings </a></li>
-                    <li><a href='/'> Contact </a></li>
+                    <li><a href='#about'> About </a></li>
+                    <li><a href='#projects'> Projects </a></li>
+                    <li><a href='#writings'> Writings </a></li>
+                    <li><a href='#contact'> Contact </a></li>
                 </ul>
             </nav>
             <div class="bar-container">
@@ -70,13 +70,13 @@
 
         </div>
         <h1 class='title'>
-            <a href='/'> Jorge Santos </a>
+            <a href='#header-wrapper'> Jorge Santos </a>
         </h1>
 
     </header>
     <main class="main">
         <section id='about'>
-            <h1>About Me:</h1>
+            <h1 class='about-title'>About Me:</h1>
             <div class='about-wrapper'>
                 <p> Graduate from <a href="https://flatironschool.com/" target="_BLANK"> Flatiron School </a> with a
                     dedication
@@ -85,18 +85,32 @@
                     leverage acquired academic knowledge and proven critical thinking, problem-solving, and teamwork
                     skills. Experienced in Ruby on Rails, React, JavaScript, React Native, HTML, and CSS.</p>
             </div>
+            <a href='#header-wrapper'>
+                <img class='top-arrow' src='./images/BacktoTop.png' alt='BacktoTop'>
+            </a>
         </section>
         <section id='projects'>
             <h1 class='project-title'>Latest projects:</h1>
             <ul class='project-container'>
                 <li class='project'>
                     <img src="./images/github.png" alt="github">
-                    <h1> Simply-do </h1>
+                    <h1> Jorge Santos </h1>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque saepe itaque natus, dicta ipsam
                         perferendis consectetur exercitationem nam vitae autem hic nesciunt iste excepturi reiciendis
                         illo a
                         nihil non officiis?</p>
-                    <a href="/" class='github-projects'>
+                    <a href="https://github.com/Jsantos107/JorgeSantos" target="_BLANK" class='github-projects'>
+                        <img src="./images/github.png" alt="github">
+                    </a>
+                </li>
+                <li class='project'>
+                    <img src="./images/github.png" alt="github">
+                    <h1> Covid-19 Help </h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque saepe itaque natus, dicta ipsam
+                        perferendis consectetur exercitationem nam vitae autem hic nesciunt iste excepturi reiciendis
+                        illo a
+                        nihil non officiis?</p>
+                    <a href="https://github.com/Jsantos107/COVID19-font-end" target="_BLANK" class='github-projects'>
                         <img src="./images/github.png" alt="github">
                     </a>
                 </li>
@@ -107,35 +121,32 @@
                         perferendis consectetur exercitationem nam vitae autem hic nesciunt iste excepturi reiciendis
                         illo a
                         nihil non officiis?</p>
-                    <a href="/" class='github-projects'>
-                        <img src="./images/github.png" alt="github">
-                    </a>
-                </li>
-                <li class='project'>
-                    <img src="./images/github.png" alt="github">
-                    <h1> Simply-do </h1>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque saepe itaque natus, dicta ipsam
-                        perferendis consectetur exercitationem nam vitae autem hic nesciunt iste excepturi reiciendis
-                        illo a
-                        nihil non officiis?</p>
-                    <a href="/" class='github-projects'>
+                    <a href="https://github.com/Jsantos107/simply-do-frontend" target="_BLANK" class='github-projects'>
                         <img src="./images/github.png" alt="github">
                     </a>
                 </li>
             </ul>
+            <a href='#header-wrapper'>
+                <img class='top-arrow' src='./images/BacktoTop.png' alt='BacktoTop'>
+            </a>
         </section>
         <section id='writings'>
             <h1 class='writing-title'>Latest Writing:</h1>
-            <img class="writing-img" src="./images/github.png" alt="github">
+            <a class='writing-a' href='https://medium.com/@JorgeSantos7/changing-ps1-on-oh-my-zsh-aec231962002' target="_BLANK">
+                <img class="writing-img" src="./images/github.png" alt="github" >
+            </a>
             <div class='writing-container'>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates, ipsam cum sequi
                     quisquam quis ea eveniet molestias distinctio. Consectetur eligendi dicta nesciunt reprehenderit
                     est! Quos ducimus sapiente atque laborum?</p>
-                <p><a href='/'>Read More</a></p>
+                <p><a href='https://medium.com/@JorgeSantos7/changing-ps1-on-oh-my-zsh-aec231962002' target="_BLANK">Read More</a></p>
             </div>
+            <a href='#header-wrapper'>
+                <img class='top-arrow' src='./images/BacktoTop.png' alt='BacktoTop'>
+            </a>
         </section>
         <section id='contact'>
-            <h1>Contact me!</h1>
+            <h1 class='contact-title'>Contact me!</h1>
             <form class='contact-form'>
                 <label for='email'>Email:</label>
                 <input type='email' class='email-input' name='email' placeholder="Please enter your email!" required>
@@ -144,17 +155,25 @@
                     placeholder="Please enter your message here!"></textarea>
                 <input type="submit" class='submit-input' value="send">
             </form>
+            <a href='#header-wrapper'>
+                <img class='top-arrow' src='./images/BacktoTop.png' alt='BacktoTop'>
+            </a>
         </section>
         <footer id='footer'>
             <ul class='footer-wrapper'>
                 <li>
-                    <a href='/'>
+                    <a href='https://github.com/Jsantos107' target="_BLANK">
                         <img class='github' src="./images/githubOutline.png" alt="github">
                     </a>
                 </li>
                 <li>
-                    <a href='/'>
+                    <a href='https://www.linkedin.com/in/santos-jorge/' target="_BLANK">
                         <img class='linkedin' src="./images/linkedin.png" alt="linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href='https://medium.com/@JorgeSantos7' target="_BLANK">
+                        <img class='medium' src="./images/medium.png" alt="medium">
                     </a>
                 </li>
             </ul>
