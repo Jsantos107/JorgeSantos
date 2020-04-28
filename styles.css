@@ -494,8 +494,80 @@ body {
 
     .about-wrapper {
         padding: 25px;
+        line-height: 29px;
+        font-size: 25px;
+        width: 100%;
+    }
+
+    #projects {
+        height: 127rem;
+    }
+
+    .project-title {
+        font-size: 40px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .project {
+        font-size: 25px;
+        line-height: 29px;
+        width: 65%;
+        align-self: center;
+        margin: 5px;
+        padding: 15px;
+        margin-top: 5%;
+    }
+
+    .project img {
+        height: 300px;
+    }
+
+    .github-projects img {
+        height: 25px;
+    }
+
+    .writing-title {
+        font-size: 40px;
+    }
+
+    .writing-container {
+        width: 80%;
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .writing-container a {
+        line-height: 29px;
+        font-size: 25px;
+    }
+
+    #contact h1 {
+        font-size: 40px;
+    }
+
+    .contact-form {
         font-size: 25px;
         width: 85%;
+    }
+
+    .email-input {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .message-input {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .submit-input {
+        font-size: 25px;
+        padding: 15px;
+        width: 150px;
     }
 }
 
@@ -536,9 +608,11 @@ body {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(50deg) translate(-7px, -7px);
     }
+
     #about {
         padding-left: 16%;
     }
+
     #about h1 {
         font-size: 30px;
     }
@@ -551,9 +625,7 @@ body {
     }
 
     #projects {
-        background-color: rgba(0, 0, 0, 0.034);
-        height: 107rem;
-        display: flex;
+        height: 115rem;
     }
 
     .project-title {
@@ -601,32 +673,32 @@ body {
         line-height: 20px;
         font-size: 18px;
     }
+
     #contact h1 {
         font-size: 30px;
         padding-left: 16%;
         padding-bottom: 0px;
     }
+
     .contact-form {
         font-size: 18px;
         width: 85%;
     }
+
     .email-input {
         font-size: 18px;
         line-height: 20px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
+
     .message-input {
-        border-radius: 10px;
-        padding: 15px;
         font-size: 18px;
         line-height: 20px;
-        border: 2px solid black;
-        margin-top: 10px;
+        margin-top: 5px;
         margin-bottom: 20px;
-        resize: both;
-        overflow: auto;
     }
+
     .submit-input {
         font-size: 18px;
         padding: 10px;
