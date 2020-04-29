@@ -393,7 +393,7 @@ body {
 }
 
 .writing-img {
-    width: 15%;
+    width: 45%;
 }
 
 .writing-img:hover {
@@ -414,7 +414,15 @@ body {
     font-size: 30px;
     padding: 10px;
 }
-
+.writing-terminal{
+    color: rgb(230, 99, 13);
+    padding: 5px;
+}
+.writing-fade{
+    border-radius: 10px;
+    opacity: 60%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.116));
+}
 .writing-container a {
     font-size: 35px;
     padding: 50px;
