@@ -138,11 +138,13 @@
             <h1 class='contact-title'>Contact me!</h1>
             <form id='form' class='contact-form'
                 action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdht5y0gPPXsrOdTVcI-1B2E-G2BI2Jy9NHPsfch3TAM_3jiA/formResponse"
-                method="post" target="hidden_iframe" onsubmit="sendForm()">
+                method="post" target="hidden_iframe" onsubmit="return sendForm()">
                 <label for='name'>Name:</label>
-                <input type='text' class= 'input' id='name' name="entry.1715526763" placeholder="What should I call you?" required>
+                <input type='text' class='input' id='name' name="entry.1715526763" placeholder="What should I call you?"
+                    required>
                 <label for='email'>Email:</label>
-                <input type='email' id='email' class='input' name="entry.1561420115" placeholder="Please enter your email!" required>
+                <input type='email' id='email' class='input' name="entry.1561420115"
+                    placeholder="Please enter your email!" required>
                 <label for='message'>Message:</label>
                 <textarea name="entry.1178513851" id='message' rows="4" cols="50"
                     placeholder="Please enter your message here!"></textarea>
@@ -173,8 +175,7 @@
             </ul>
         </footer>
     </main>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-        onload="if(submitted){
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){
             const form = document.getElementById('form').reset();
             alert('Thank you! Your message has been sent!')
             }"></iframe>
@@ -204,8 +205,14 @@
         }
 
         function sendForm() {
-            submitted = true
-            return true;
+            const send = confirm('Are you sure you would like you send?')
+            if (send === true) {
+                submitted = true;
+                return true;
+            } else{
+                alert('Message not sent!')
+                return false;
+            }
         }
     </script>
 </body>
