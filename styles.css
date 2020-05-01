@@ -450,7 +450,7 @@ body {
     margin-bottom: 50px;
 }
 
-.email-input {
+.input {
     font-size: 25px;
     padding: 7px;
     border-radius: 10px;
@@ -460,7 +460,7 @@ body {
     margin-bottom: 10px;
 }
 
-.message-input {
+#message {
     border-radius: 10px;
     padding: 15px;
     font-size: 25px;
@@ -622,11 +622,11 @@ body {
         width: 65%;
     }
 
-    .email-input {
+    .input {
         font-size: 25px;
     }
 
-    .message-input {
+    #message {
         font-size: 25px;
     }
 
@@ -735,11 +735,11 @@ body {
         font-size: 18px;
     }
 
-    .email-input {
+    .input {
         font-size: 18px;
     }
 
-    .message-input {
+    #message {
         font-size: 18px;
     }
 
