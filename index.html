@@ -9,9 +9,7 @@
 </head>
 
 <body>
-
     <div class="slideshow-container">
-
         <div class="slides fade">
             <p class="numbertext">1 / 3</p>
             <img src="./images/Denver-SE-010620.jpg">
@@ -26,32 +24,8 @@
             <p class="numbertext">3 / 3</p>
             <img src="./images/Jorge.jpg">
         </div>
-
     </div>
-    <script>
-        let slideIndex = 0;
-        showSlides();
 
-        function showSlides() {
-            let i;
-            const slides = document.getElementsByClassName("slides");
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1
-            }
-
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2500);
-        }
-
-        function changeMenu(x) {
-            x.classList.toggle("change");
-        }
-    </script>
     <header id='header-wrapper'>
         <div class="menu-container" onclick="changeMenu(this)">
             <nav class="nav-wrapper">
@@ -162,18 +136,23 @@
         </section>
         <section id='contact'>
             <h1 class='contact-title'>Contact me!</h1>
-            <form class='contact-form'>
+            <form id='form' class='contact-form'
+                action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdht5y0gPPXsrOdTVcI-1B2E-G2BI2Jy9NHPsfch3TAM_3jiA/formResponse"
+                method="post" target="hidden_iframe" onsubmit="sendForm()">
+                <label for='name'>Name:</label>
+                <input type='text' class= 'input' id='name' name="entry.1715526763" placeholder="What should I call you?" required>
                 <label for='email'>Email:</label>
-                <input type='email' class='email-input' name='email' placeholder="Please enter your email!" required>
+                <input type='email' id='email' class='input' name="entry.1561420115" placeholder="Please enter your email!" required>
                 <label for='message'>Message:</label>
-                <textarea class="message-input" rows="4" cols="50"
+                <textarea name="entry.1178513851" id='message' rows="4" cols="50"
                     placeholder="Please enter your message here!"></textarea>
-                <input type="submit" class='submit-input' value="send">
+                <input type="submit" class='submit-input' value="submit">
             </form>
             <a href='#header-wrapper'>
                 <img class='top-arrow' src='./images/BacktoTop.png' alt='BacktoTop'>
             </a>
         </section>
+
         <footer id='footer'>
             <ul class='footer-wrapper'>
                 <li>
@@ -194,7 +173,41 @@
             </ul>
         </footer>
     </main>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+        onload="if(submitted){
+            const form = document.getElementById('form').reset();
+            alert('Thank you! Your message has been sent!')
+            }"></iframe>
+    <script>
+        let submitted = false;
+        let slideIndex = 0;
+        showSlides();
 
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("slides");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2500);
+        }
+
+        function changeMenu(x) {
+            x.classList.toggle("change");
+        }
+
+        function sendForm() {
+            submitted = true
+            return true;
+        }
+    </script>
 </body>
 
 </html>
