@@ -334,16 +334,19 @@ body {
     font-size: 55px;
     padding: 60px;
 }
+
 .project-a {
     display: flex;
     justify-content: center;
 }
-.project-header{
+
+.project-header {
     color: rgb(230, 99, 13);
     font-size: 30px;
     padding: 5px;
     text-align: center;
 }
+
 .project-container {
     display: flex;
     flex-direction: row;
@@ -364,10 +367,12 @@ body {
     margin: 15px;
     padding: 20px;
 }
+
 .project p {
     padding: 5px;
     height: 50%;
 }
+
 .project img {
     height: 200px;
 }
@@ -394,6 +399,7 @@ body {
 
 .writing-img {
     width: 45%;
+    height: 100%;
 }
 
 .writing-img:hover {
@@ -414,15 +420,18 @@ body {
     font-size: 30px;
     padding: 10px;
 }
-.writing-terminal{
+
+.writing-terminal {
     color: rgb(230, 99, 13);
     padding: 5px;
 }
-.writing-fade{
+
+.writing-fade {
     border-radius: 10px;
     opacity: 60%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.116));
 }
+
 .writing-container a {
     font-size: 35px;
     padding: 50px;
@@ -527,9 +536,11 @@ body {
 .medium {
     border-radius: 7px;
 }
-.email{
+
+.email {
     border-radius: 10px;
 }
+
 .footer-quote {
     color: white;
 }
@@ -699,9 +710,11 @@ body {
         font-size: 30px;
         padding-left: 16%;
     }
-    .project-header{
+
+    .project-header {
         font-size: 25px;
     }
+
     .project {
         font-size: 18px;
         height: 15%;
@@ -728,7 +741,10 @@ body {
         font-size: 18px;
     }
 
-    #contact h1 {
+    .writing-img{
+        max-height: 200px;
+    }
+     #contact h1 {
         font-size: 30px;
         padding-bottom: 25px;
     }
