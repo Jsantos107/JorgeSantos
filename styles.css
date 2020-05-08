@@ -167,7 +167,7 @@ body {
 .slides img {
     max-height: 650px;
     width: 100%;
-    opacity: 80%;
+    opacity: 70%;
     object-fit: cover;
 }
 
@@ -189,12 +189,12 @@ body {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fade {
     from {
-        opacity: .4
+        opacity: .3
     }
 
     to {
@@ -204,7 +204,7 @@ body {
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: .3
     }
 
     to {
