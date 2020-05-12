@@ -9,7 +9,7 @@
 ## General info
 Through this website, user can see a little more about me as well as my latest writings. In addition, users can also contact me through this website. Go see the code to the website, or [click here](http://jlsantos.com/)  and see it in action.
 ## Intro Video
-![](Jlsantos.gif)
+![](images/Jlsantos.gif)
 ## Technologies
 * HTML
 * CSS
