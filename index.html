@@ -45,13 +45,16 @@
 
         </div>
         <h1 class='title'>
-            <a href='#header-wrapper'> Jorge Santos </a>
+            <a href='#about'> Jorge Santos </a>
         </h1>
 
     </header>
     <main class="main">
         <section id='about'>
             <h1 class='about-title'>About Me:</h1>
+            <a href='#header-wrapper' class='about-a'>
+                <img src="https://jlsantosphotos.s3.us-east-2.amazonaws.com/Jorge.jpg" class='about-photo' alt='Jorge'>
+            </a>
             <div class='about-wrapper'>
                 <p> Graduate from <a href="https://flatironschool.com/" target="_BLANK"> Flatiron School </a> with a
                     dedication
@@ -179,10 +182,6 @@
             </ul>
         </footer>
     </main>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){
-            const form = document.getElementById('form').reset();
-            alert('Thank you! Your message has been sent!')
-            }"></iframe>
     <script>
         let submitted = false;
         let slideIndex = 0;
@@ -219,6 +218,11 @@
             }
         }
     </script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){
+            const form = document.getElementById('form').reset();
+            alert('Thank you! Your message has been sent!')
+            }">
+    </iframe>
 </body>
 
 </html>

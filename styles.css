@@ -312,6 +312,23 @@ body {
     font-size: 55px;
 }
 
+.about-a {
+    display: flex;
+    justify-content: center;
+}
+
+.about-photo:hover {
+    box-shadow: 0 0px 16px 0 rgb(230, 99, 13);
+}
+
+.about-photo {
+    display: none;
+    max-height: 300px;
+    align-self: center;
+    border-radius: 20px;
+    max-width: 300px;
+}
+
 .about-wrapper {
     align-self: center;
     text-decoration: none;
@@ -588,6 +605,10 @@ body {
         font-size: 40px;
     }
 
+    .about-photo {
+        display: block;
+    }
+
     .about-wrapper {
         padding: 25px;
         font-size: 25px;
@@ -698,7 +719,10 @@ body {
     #about h1 {
         font-size: 30px;
     }
-
+    .about-photo {
+        max-height: 200px;
+        max-width: 200px;
+    }
     .about-wrapper {
         padding: 15px;
         font-size: 18px;
@@ -741,10 +765,11 @@ body {
         font-size: 18px;
     }
 
-    .writing-img{
+    .writing-img {
         max-height: 200px;
     }
-     #contact h1 {
+
+    #contact h1 {
         font-size: 30px;
         padding-bottom: 25px;
     }
