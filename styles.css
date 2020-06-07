@@ -456,6 +456,10 @@ body {
     padding: 50px;
 }
 
+.writing-container a:hover {
+    color: rgb(255, 149, 78);
+}
+
 #contact {
     background-color: rgba(0, 0, 0, 0.034);
     display: flex;
@@ -719,10 +723,12 @@ body {
     #about h1 {
         font-size: 30px;
     }
+
     .about-photo {
         max-height: 200px;
         max-width: 200px;
     }
+
     .about-wrapper {
         font-size: 18px;
         padding: 15px;
