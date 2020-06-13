@@ -187,14 +187,14 @@ body {
 
 .fade {
     animation-name: fade;
-    animation-duration: 2.5s;
+    animation-duration: 3s;
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fade {
     from {
-        opacity: .3
+        opacity: 0.2
     }
 
     to {
@@ -203,13 +203,17 @@ body {
 }
 
 @keyframes fade {
-    from {
-        opacity: .3
+    0% {
+        opacity: 0
     }
 
-    to {
+    50% {
         opacity: 1
     }
+    100% {
+        opacity: 0
+    }
+
 }
 
 #header-wrapper {
